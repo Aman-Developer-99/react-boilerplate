@@ -1,24 +1,11 @@
 import React from "react";
-
-const data = [
-  { id: 1, name: "Aman", age: 25 },
-  { id: 2, name: "Harsh", age: 30 },
-  { id: 3, name: "Mohit", age: 22 },
-];
-
+import UserList from "./components/UserList";
 function App() {
   return (
     <div className="App">
-      <h1>List of Users</h1>
-      <ul>
-        {data.map((user) => (
-          <li key={user.id}>
-            {user.name} - {user.age} years old
-          </li>
-        ))}
-      </ul>
+      <h1>Welcome to Users App</h1>
+      <UserList /> 
     </div>
   );
 }
-
 export default App;
